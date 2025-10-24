@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Forensic Dark Theme Colors */
+    --background: 210 11% 8%;
+    --foreground: 180 100% 95%;
+
+    --card: 215 15% 12%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 215 15% 12%;
+    --popover-foreground: 180 100% 95%;
+
+    --primary: 188 84% 42%;
+    --primary-foreground: 210 11% 8%;
+
+    --secondary: 215 15% 18%;
+    --secondary-foreground: 180 100% 95%;
+
+    --muted: 215 15% 15%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 188 84% 42%;
+    --accent-foreground: 210 11% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 100% 95%;
+
+    --border: 215 15% 20%;
+    --input: 215 15% 15%;
+    --ring: 188 84% 42%;
+
+    --radius: 0.5rem;
+
+    /* Forensic specific colors */
+    --forensic-success: 120 100% 40%;
+    --forensic-warning: 45 100% 60%;
+    --forensic-error: 0 84% 60%;
+    --forensic-info: 188 84% 42%;
+    --forensic-secure: 120 100% 25%;
+
+    --sidebar-background: 210 11% 6%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 188 84% 42%;
+    --sidebar-primary-foreground: 210 11% 8%;
+    --sidebar-accent: 215 15% 15%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 215 15% 18%;
+    --sidebar-ring: 188 84% 42%;
+  }
+
+  .dark {
+    /* Enhanced Dark Mode for Forensic Theme */
+    --background: 210 11% 4%;
+    --foreground: 180 100% 98%;
+
+    --card: 215 15% 8%;
+    --card-foreground: 180 100% 98%;
+
+    --popover: 215 15% 8%;
+    --popover-foreground: 180 100% 98%;
+
+    --primary: 188 84% 45%;
+    --primary-foreground: 210 11% 4%;
+
+    --secondary: 215 15% 14%;
+    --secondary-foreground: 180 100% 98%;
+
+    --muted: 215 15% 10%;
+    --muted-foreground: 210 10% 65%;
+
+    --accent: 188 84% 45%;
+    --accent-foreground: 210 11% 4%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 180 100% 98%;
+
+    --border: 215 15% 16%;
+    --input: 215 15% 10%;
+    --ring: 188 84% 45%;
+
+    --forensic-success: 120 100% 45%;
+    --forensic-warning: 45 100% 65%;
+    --forensic-error: 0 84% 65%;
+    --forensic-info: 188 84% 45%;
+    --forensic-secure: 120 100% 30%;
+
+    --sidebar-background: 210 11% 2%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 188 84% 45%;
+    --sidebar-primary-foreground: 210 11% 4%;
+    --sidebar-accent: 215 15% 10%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 215 15% 14%;
+    --sidebar-ring: 188 84% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
